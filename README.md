@@ -1,6 +1,20 @@
-# Local Digital Concierge Agent
+<h1 style="text-align:center">🏠 Local Digital Concierge Agent</h1>
 
-A privacy-first, local-first household management agent that runs entirely on your device. Built for Vietnamese households but adaptable globally.
+<p style="text-align:center"><strong>A privacy-first, local-first household management agent that runs entirely on your device.</strong><br>
+Built for households but adaptable globally.</p>
+
+## ✨ Features
+
+- 🔒 **100% Local & Private** — No data leaves your device
+- 🏡 **Household Management** — Bills, expenses, maintenance, scheduling
+- 📄 **Smart Bill Processing** — Auto extract information from bill images/PDFs
+- 🗣️ **Voice & Text Interaction** — Natural Vietnamese + English support
+- 📅 **Intelligent Scheduler** — Reminders, maintenance tracking, service booking
+- 💰 **Expense & Budget Tracker** — Automatic categorization and insights
+- 📧 **Smart Message Drafter** — Auto generate polite messages to services/landlords
+- 🔍 **Service Finder** — Recommend local services based on your needs
+- 📊 **Beautiful Dashboard** — Web-based UI for easy management
+- 🧠 **Self-Improving Knowledge** — Learns your household habits over time
 
 ## Overview
 
@@ -50,56 +64,57 @@ python src/agents/orchestrator.py
 - Optional cloud services: Google Places, Twilio, Zalo (graceful degradation without them)
 
 ### Core Components
-```
+
+```bash
 src/
-??? agents/
-?   ??? bill-processor/
-?   ?   ??? bill_processor.py
-?   ?   ??? image_preprocessor.py
-?   ?   ??? __init__.py
-?   ??? scheduler/
-?   ?   ??? scheduler.py
-?   ?   ??? __init__.py
-?   ??? service-finder/
-?   ?   ??? service_finder.py
-?   ?   ??? __init__.py
-?   ??? message-drafter/
-?   ?   ??? message_drafter.py
-?   ?   ??? __init__.py
-?   ??? maintenance-tracker/
-?   ?   ??? maintenance_tracker.py
-?   ?   ??? __init__.py
-?   ??? expense-tracker/
-?   ?   ??? expense_tracker.py
-?   ?   ??? __init__.py
-?   ??? knowledge-updater/
-?   ?   ??? knowledge_updater.py
-?   ?   ??? __init__.py
-?   ??? orchestrator.py
-??? database/
-?   ??? db_client.py
-?   ??? migration.py
-?   ??? schema.sql
-?   ??? __init__.py
-??? integrations/
-?   ??? __init__.py
-??? models/
-?   ??? __init__.py
-??? prompts/
-?   ??? bill-extraction-prompt.md
-?   ??? issue-classifier-prompt.md
-?   ??? message-draft-prompt.md
-?   ??? summary-prompt.md
-?   ??? __init__.py
-??? tools/
-?   ??? backup.py
-?   ??? llm_client.py
-?   ??? __init__.py
-??? ui/
-    ??? __init__.py
-    ??? web-dashboard/
-        ??? main.py
-        ??? __init__.py
+├── agents/
+│   ├── bill-processor/
+│   │   ├── bill_processor.py
+│   │   ├── image_preprocessor.py
+│   │   └── __init__.py
+│   ├── scheduler/
+│   │   ├── scheduler.py
+│   │   └── __init__.py
+│   ├── service-finder/
+│   │   ├── service_finder.py
+│   │   └── __init__.py
+│   ├── message-drafter/
+│   │   ├── message_drafter.py
+│   │   └── __init__.py
+│   ├── maintenance-tracker/
+│   │   ├── maintenance_tracker.py
+│   │   └── __init__.py
+│   ├── expense-tracker/
+│   │   ├── expense_tracker.py
+│   │   └── __init__.py
+│   ├── knowledge-updater/
+│   │   ├── knowledge_updater.py
+│   │   └── __init__.py
+│   └── orchestrator.py
+├── database/
+│   ├── db_client.py
+│   ├── migration.py
+│   ├── schema.sql
+│   └── __init__.py
+├── integrations/
+│   └── __init__.py
+├── models/
+│   └── __init__.py
+├── prompts/
+│   ├── bill-extraction-prompt.md
+│   ├── issue-classifier-prompt.md
+│   ├── message-draft-prompt.md
+│   ├── summary-prompt.md
+│   └── __init__.py
+├── tools/
+│   ├── backup.py
+│   ├── llm_client.py
+│   └── __init__.py
+└── ui/
+    ├── __init__.py
+    └── web-dashboard/
+        ├── main.py
+        └── __init__.py
 ```
 
 ## Privacy & Security
